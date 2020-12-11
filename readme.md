@@ -1,0 +1,1 @@
+npx browser-sync -s -f "css/*.css" -f "*.html"
