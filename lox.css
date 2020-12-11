@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 800px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    border-bottom: darkgray 1px solid;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header-style {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+.header__logo_name {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.pink-text {
+    color: rgb(241, 109, 127);
+}
+
+.header__browse {
+    margin-left: 30px;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+}
+
+.header__browse_dropdown {
+    border: none;
+    outline: none;
+    background: rgb(240, 240, 240);
+    padding-left: 5px;
+}
+
+.header__browse_search {
+    width: 260px;
+    border-radius: unset;
+    border: 1px solid darkgray;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 10px;
+}
+
+.header__browse_search-button {
+    padding: 7px 7px;
+    border: none;
+    cursor: pointer;
+    background: white;
+}
+
+.header__browse_search-button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: darkgray;
+}
+
+.header__basket {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.header__basket:before {
+    content: "\f07a";
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: black;
+}
+
+.header__account_dropdown {
+    width: 110px;
+    background: rgb(241, 109, 127);
+    color: white;
+    border: none;
+    border-radius: 0;
+    margin-left: 15px;
+    padding: 7px 5px 7px 12px;
+}
+
+.list {
+    display: flex;
+    width: 800px;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.print {
+    width: 100%;
+    padding: 250px 0;
+    overflow: hidden;
+    background: url("maket1/img/man.png") no-repeat 75% 0 / 500px rgb(230, 230, 230);
+}
+
+.print__text {
+    position: relative;
+    padding-left: 16px;
+}
+
+.print__text::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+    width: 8px;
+    background: rgb(241, 109, 127);
+}
+
+.print__text_title {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.print__text_subtitle {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.print__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.banner-text {
+    position: absolute;
+}
