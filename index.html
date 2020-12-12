@@ -10,7 +10,7 @@
     <header class="header">
         <div class="container header-style">
             <a class="header__logo" href="#">
-                <img src="img/logo.png" width="30px" height="auto">
+                <img src="img/logo.png" width="30px" height="auto" alt="Logotype">
                 <div class="header__logo_name">Bran<span class="pink-text">d</span></div>
             </a>
             <form class="header__browse" action="" method="get">
@@ -22,7 +22,7 @@
                     <option>4</option>
                     <option>5</option>
                 </select>
-                <input class="header__browse_search" type="search" placeholder="Search for item...">
+                <input class="header__browse_search" type="search" placeholder="Search for Item...">
                 <button class="header__browse_search-button" type="submit" id="search"></button>
             </form>
             <a class="header__basket" href="#"></a>
@@ -49,14 +49,43 @@
             <p class="print__text_subtitle">of luxerious <span class="pink-text">fashion</span></p>
         </div>
     </section>
-    <section class="container">
-        <figure>
-            <img src="img/hot-deal.png">
-            <figcaption class="banner-text">
-                <p class="banner-text__title">Hot deal</p>
-                <p class="banner-text__subtitle pink-text">For men</p>
-            </figcaption>
-        </figure>
+    <section class="container category">
+        <a href="#">
+            <figure class="category__banner-men">
+                <img src="img/for-men.png">
+                <figcaption class="category__banner-text">
+                    <p class="category__banner_text_title">Hot deal</p>
+                    <p class="category__banner_text_subtitle pink-text">For men</p>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#">
+            <figure class="category__banner-women">
+                <img src="img/women.png">
+                <figcaption class="category__banner-text">
+                    <p class="category__banner_text_title">30% offer</p>
+                    <p class="category__banner_text_subtitle pink-text">Women</p>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#">
+            <figure class="category__banner-accesories">
+                <img src="img/accesories.png">
+                <figcaption class="category__banner-text">
+                    <p class="category__banner_text_title">Luxirous & trendy</p>
+                    <p class="category__banner_text_subtitle pink-text">Accesories</p>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#">
+            <figure class="category__banner-kids">
+                <img src="img/for-kids.png">
+                <figcaption class="category__banner-text">
+                    <p class="category__banner_text_title">New arrivals</p>
+                    <p class="category__banner_text_subtitle pink-text">For kids</p>
+                </figcaption>
+            </figure>
+        </a>
     </section>
     <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
