@@ -1,0 +1,85 @@
+.product__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+}
+
+.product__header_title {
+  font-size: 30px;
+}
+
+.product__header_subtitle {
+  font-size: 14px;
+}
+
+.product__plates {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.product__plates_item {
+  margin: 20px 0;
+  position: relative;
+}
+
+.loh {
+  position: relative;
+
+}
+
+.product__plates_hover-block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: none;
+  padding-bottom: 70px;
+  background: rgba(58,56,56,0.83);
+  text-align: center;
+  border: 0;
+}
+
+.product__plates_button {
+  font-size: 16px;
+  color: white;
+  background: none;
+  margin-top: 100px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 0;
+}
+
+.product__plates_button::before {
+  content: "\f07a";
+  font-family: FontAwesome;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.product__plates_item_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70px;
+  padding-left: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product__plates_item:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25);
+}
+
+.product__plates_item:hover .product__plates_hover-block {
+  display: block;
+}
+
+.product__plates_item_description .pink-text {
+  font-size: 16px;
+}
