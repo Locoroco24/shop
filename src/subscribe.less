@@ -1,6 +1,95 @@
 .subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
   background: url("../img/subscribe.png");
-  background-size: cover;
-  width: 100%;
+  overflow: visible;
   height: 438px;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__quote{
+  width: 50%;
+  padding-right: 70px;
+}
+
+.subscribe__quote blockquote {
+  padding-left: 100px;
+}
+
+.subscribe__quote__text {
+  font-style: italic;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.subscribe__quote__text::before {
+  content: '';
+  background: url("../img/quote1.png");
+  position: absolute;
+  left: 0;
+  top: -10px;
+  padding: 41.5px 41.5px;
+}
+
+.subscribe__quote__from {
+  font-size: 12px;
+}
+
+.subscribe__quote__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 4px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.subscribe__quote__navigation a {
+  height: 100%;
+  width: 38px;
+  background: rgb(241, 109, 127);
+}
+
+.subscribe__form {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.subscribe__form_title {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.subscribe__form_subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.subscribe__form_email {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.subscribe__form_email_input {
+  padding-left: 20px;
+  border: none;
+  background: rgb(225, 225, 225);
+  border-radius: 1000px 0 0 1000px;
+  outline: none;
+}
+
+.subscribe__form_email_button {
+  padding: 15px 20px;
+  border: none;
+  background: rgb(241, 109, 127);
+  color: white;
+  border-radius: 0 1000px 1000px 0;
+  outline: none;
 }

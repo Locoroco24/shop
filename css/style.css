@@ -12,6 +12,9 @@ a {
   color: black;
   text-decoration: none;
 }
+blockquote {
+  position: relative;
+}
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -21,6 +24,9 @@ a {
 }
 .absolute {
   position: absolute;
+}
+.bold {
+  font-weight: bold;
 }
 .header {
   display: flex;
@@ -74,7 +80,7 @@ a {
   cursor: pointer;
   background: white;
 }
-.header__browse_search-button:before {
+.header__browse_search-button::before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
@@ -85,7 +91,7 @@ a {
   height: 30px;
   margin-left: auto;
 }
-.header__basket:before {
+.header__basket::before {
   content: "\f07a";
   font-family: FontAwesome;
   font-size: 30px;
@@ -273,6 +279,7 @@ a {
   background: #f16d7f;
   color: white;
   font-size: 16px;
+  outline: none;
 }
 .product__browse_button::after {
   content: '\f178';
@@ -310,7 +317,7 @@ a {
   padding: 50px 30px 0 30px;
   color: white;
   height: 529px;
-  min-width: 400px;
+  min-width: 300px;
 }
 dt {
   font-size: 20px;
@@ -343,8 +350,177 @@ dd {
   left: -75px;
 }
 .subscribe {
+  display: flex;
+  align-items: center;
+}
+.banner {
   background: url("../img/subscribe.png");
-  background-size: cover;
-  width: 100%;
+  overflow: visible;
   height: 438px;
+  display: flex;
+  align-items: center;
+}
+.subscribe__quote {
+  width: 50%;
+  padding-right: 70px;
+}
+.subscribe__quote blockquote {
+  padding-left: 100px;
+}
+.subscribe__quote__text {
+  font-style: italic;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.subscribe__quote__text::before {
+  content: '';
+  background: url("../img/quote1.png");
+  position: absolute;
+  left: 0;
+  top: -10px;
+  padding: 41.5px 41.5px;
+}
+.subscribe__quote__from {
+  font-size: 12px;
+}
+.subscribe__quote__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 4px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.subscribe__quote__navigation a {
+  height: 100%;
+  width: 38px;
+  background: #f16d7f;
+}
+.subscribe__form {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  justify-content: space-between;
+}
+.subscribe__form_title {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.subscribe__form_subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.subscribe__form_email {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.subscribe__form_email_input {
+  padding-left: 20px;
+  border: none;
+  background: #e1e1e1;
+  border-radius: 1000px 0 0 1000px;
+  outline: none;
+}
+.subscribe__form_email_button {
+  padding: 15px 20px;
+  border: none;
+  background: #f16d7f;
+  color: white;
+  border-radius: 0 1000px 1000px 0;
+  outline: none;
+}
+.footer {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.footer__note {
+  width: 430px;
+  font-size: 14px;
+  color: #898989;
+}
+.footer__note p {
+  margin-top: 20px;
+  line-height: 24px;
+}
+.footer__logo {
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+.footer__logo_name {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__list_title {
+  color: #f16d7f;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer__list_link {
+  color: #898989;
+}
+.footer-block {
+  background: #e6e6e6;
+  margin-top: 100px;
+  padding: 20px 0;
+  color: #7a7a7a;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright__social {
+  display: flex;
+  width: 192px;
+  justify-content: space-between;
+}
+.copyright__social_link {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+}
+.copyright__social_link:hover {
+  background: #f16d7f;
+}
+.copyright__social_link:hover::before {
+  color: white;
+}
+.facebook_icon::before {
+  content: '\f09a';
+  font-family: FontAwesome;
+  color: #b2b2b2;
+}
+.twitter_icon::before {
+  content: '\f099';
+  font-family: FontAwesome;
+  color: #b2b2b2;
+}
+.linkedin_icon::before {
+  content: '\f0e1';
+  font-family: FontAwesome;
+  color: #b2b2b2;
+}
+.pinterest_icon::before {
+  content: '\f231';
+  font-family: FontAwesome;
+  color: #b2b2b2;
+}
+.google_icon::before {
+  content: '\f0d5';
+  font-family: FontAwesome;
+  color: #b2b2b2;
 }
